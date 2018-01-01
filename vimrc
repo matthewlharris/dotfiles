@@ -19,6 +19,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'cohama/lexima.vim'
 Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-surround'
+Plugin 'mileszs/ack.vim'
    
 
 " All of your Plugins must be added before the following line

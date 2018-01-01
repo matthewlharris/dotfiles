@@ -11,6 +11,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'SirVer/ultisnips'
+   
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -20,13 +24,21 @@ filetype plugin indent on    " required
 " SETTINGS
 " ======================== 
 set number
-set autoindent
+set noswapfile
+set noshowmode
 set smartindent
+set smarttab
 set expandtab
+set showcmd
 set tabstop=2
 set shiftwidth=2
 set statusline+=%F
 set ignorecase
+set splitbelow splitright
+
+let g:ctrlp_map = '<c-p>'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
 
 
 " KEYMAPS

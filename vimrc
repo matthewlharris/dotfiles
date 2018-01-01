@@ -14,6 +14,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'SirVer/ultisnips'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'cohama/lexima.vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'tpope/vim-surround'
    
 
 " All of your Plugins must be added before the following line

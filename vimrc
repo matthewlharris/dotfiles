@@ -16,7 +16,9 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
 " SETTINGS
+" ======================== 
 set number
 set autoindent
 set smartindent
@@ -26,14 +28,20 @@ set shiftwidth=2
 set statusline+=%F
 set ignorecase
 
+
 " KEYMAPS
+" ======================== 
 " toggle nerd tree with ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
 
 " NORMAL MODE KEYMAPS
+" ======================== 
 
 
 " INSERT MODE KEYMAPS
+" ========================
 " autocomplete curly braces with newline and tabbed cursor placement
 inoremap {<cr> {<cr>}<c-o><s-o>
+" switch to normal mode with shift+i
+inoremap <S-i> <Space><Esc>x

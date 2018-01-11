@@ -19,7 +19,9 @@ Plugin 'tpope/vim-endwise'
 Plugin 'cohama/lexima.vim'
 Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-rails'
 Plugin 'mileszs/ack.vim'
+Plugin 'maksimr/vim-jsbeautify'
    
 
 " All of your Plugins must be added before the following line
@@ -29,6 +31,9 @@ filetype plugin indent on    " required
 
 " SETTINGS
 " ======================== 
+syntax enable
+set background=dark
+colorscheme Base2Tone_EveningDark
 set number
 set noswapfile
 set noshowmode
@@ -61,5 +66,5 @@ map <C-n> :NERDTreeToggle<CR>
 " ========================
 " autocomplete curly braces with newline and tabbed cursor placement
 inoremap {<cr> {<cr>}<c-o><s-o>
-" switch to normal mode with shift+i
-inoremap <S-i> <Space><Esc>x
+" switch to normal mode with jk
+inoremap jk <Space><Esc>x

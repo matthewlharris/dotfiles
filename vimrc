@@ -21,7 +21,7 @@ Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
 Plugin 'mileszs/ack.vim'
-Plugin 'maksimr/vim-jsbeautify'
+Plugin 'zeekay/vim-beautify'
    
 
 " All of your Plugins must be added before the following line

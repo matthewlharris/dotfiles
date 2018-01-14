@@ -21,13 +21,12 @@ Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
 Plugin 'zeekay/vim-beautify'
-Plugin 'ggreer/the_silver_searcher'
+Plugin 'mileszs/ack.vim'
    
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
 
 " SETTINGS
 " ======================== 
@@ -47,21 +46,12 @@ set statusline+=%F
 set ignorecase
 set splitbelow splitright
 
+let mapleader = " "
 let g:ctrlp_map = '<c-p>'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
+let g:ackprg = "ag --vimgrep"
 
-" The Silver Searcher
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-endif
 
 " KEYMAPS
 " ======================== 
@@ -71,11 +61,10 @@ map <C-n> :NERDTreeToggle<CR>
 
 " NORMAL MODE KEYMAPS
 " ======================== 
+nnoremap <Leader>a :Ack<Space>
 
 
 " INSERT MODE KEYMAPS
 " ========================
-" autocomplete curly braces with newline and tabbed cursor placement
-inoremap {<cr> {<cr>}<c-o><s-o>
 " switch to normal mode with jk
 inoremap jk <Space><Esc>x

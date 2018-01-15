@@ -20,8 +20,8 @@ Plugin 'cohama/lexima.vim'
 Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
-Plugin 'zeekay/vim-beautify'
 Plugin 'mileszs/ack.vim'
+Plugin 'ngmy/vim-rubocop'
    
 
 " All of your Plugins must be added before the following line
@@ -45,6 +45,7 @@ set shiftwidth=2
 set statusline+=%F
 set ignorecase
 set splitbelow splitright
+set colorcolumn=80
 
 let mapleader = " "
 let g:ctrlp_map = '<c-p>'

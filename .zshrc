@@ -58,5 +58,6 @@ function gaa() {
   git add --all
 }
 
-
-
+function rap() {
+  rails assets:precompile
+}

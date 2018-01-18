@@ -63,6 +63,7 @@ map <C-n> :NERDTreeToggle<CR>
 " NORMAL MODE KEYMAPS
 " ======================== 
 nnoremap <Leader>a :Ack<Space>
+nnoremap ; :
 
 
 " INSERT MODE KEYMAPS

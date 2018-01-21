@@ -61,3 +61,8 @@ function gaa() {
 function rap() {
   rails assets:precompile
 }
+
+function gcom() {
+  git commit
+}
+

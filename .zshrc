@@ -66,3 +66,7 @@ function gcom() {
   git commit
 }
 
+function dnsflush() {
+  sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed
+}
+

@@ -22,6 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
 Plugin 'mileszs/ack.vim'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'pbrisbin/vim-mkdir'
    
 
 " All of your Plugins must be added before the following line

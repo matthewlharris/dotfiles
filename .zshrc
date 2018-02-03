@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/matt127/.oh-my-zsh
+export ZSH=/Users/matt/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"                                                        
                                                                                 
@@ -21,6 +21,7 @@ plugins=(
 )                                                                               
                                                                                 
 source $ZSH/oh-my-zsh.sh                                                        
+
                                                                                 
 # User configuration                                                            
                                                                                 
@@ -70,3 +71,6 @@ function dnsflush() {
   sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed
 }
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

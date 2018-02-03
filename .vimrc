@@ -47,6 +47,7 @@ set statusline+=%F
 set ignorecase
 set splitbelow splitright
 set colorcolumn=80
+set clipboard=unnamed
 
 let mapleader = " "
 let g:ctrlp_map = '<c-p>'

@@ -48,6 +48,7 @@ set ignorecase
 set splitbelow splitright
 set colorcolumn=80
 set clipboard=unnamed
+set backspace=2
 
 let mapleader = " "
 let g:ctrlp_map = '<c-p>'
@@ -66,7 +67,10 @@ map <C-n> :NERDTreeToggle<CR>
 " ======================== 
 nnoremap <Leader>a :Ack<Space>
 nnoremap ; :
+nnoremap <Leader>d "_d
 
+" VISUAL MODE KEYMAPS
+vnoremap <Leader>d "_d
 
 " INSERT MODE KEYMAPS
 " ========================

@@ -4,6 +4,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/matt/.oh-my-zsh
 
+# Path the Android SDK
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 ZSH_THEME="robbyrussell"                                                        
                                                                                 
 # Uncomment the following line to display red dots whilst waiting for completion.

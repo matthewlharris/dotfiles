@@ -4,43 +4,43 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/matt/.oh-my-zsh
 
-# Path the Android SDK
+# Path to the Android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-ZSH_THEME="robbyrussell"                                                        
-                                                                                
+ZSH_THEME="robbyrussell"
+
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"                                                  
+COMPLETION_WAITING_DOTS="true"
 
 DISABLE_LS_COLORS="true"
-                                                                                
-# Would you like to use another custom folder than $ZSH/custom?                 
-# ZSH_CUSTOM=/path/to/new-custom-folder                                         
-                                                                                
-plugins=(                                                                       
-  colorize                                                                      
-  last-working-dir                                                              
-  osx                                                                           
-)                                                                               
-                                                                                
-source $ZSH/oh-my-zsh.sh                                                        
 
-                                                                                
-# User configuration                                                            
-                                                                                
-# Preferred editor for local and remote sessions                                
-# if [[ -n $SSH_CONNECTION ]]; then                                             
-#   export EDITOR='vim'                                                         
-# else                                                                          
-#   export EDITOR='mvim'                                                        
-# fi                                                                            
-                                                                                
-# Compilation flags                                                             
-# export ARCHFLAGS="-arch x86_64"                                               
-                                                                                
-# ssh                                                                           
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+plugins=(
+  colorize
+  last-working-dir
+  osx
+)
+
+source $ZSH/oh-my-zsh.sh
+
+
+# User configuration
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # list all files
@@ -53,6 +53,12 @@ function lss() {
 # cd into my rubyapps folder and list apps
 function cdr() {
   cd ~/documents/rubyapps
+  lss
+}
+
+# cd into my javascript-apps folder and list apps
+function cdj() {
+  cd ~/documents/javascript-apps
   lss
 }
 

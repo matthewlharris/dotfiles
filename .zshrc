@@ -50,9 +50,21 @@ function lss() {
   ls -aFx
 }
 
-# cd into my rubyapps folder and list apps
+# cd into my hello-universe folder and list files
+function cdhu() {
+  cd ~/documents/hello-universe
+  lss
+}
+
+# cd into my python-apps folder and list apps
+function cdp() {
+  cd ~/documents/python-apps
+  lss
+}
+
+# cd into my ruby-apps folder and list apps
 function cdr() {
-  cd ~/documents/rubyapps
+  cd ~/documents/ruby-apps
   lss
 }
 

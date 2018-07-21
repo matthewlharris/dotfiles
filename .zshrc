@@ -9,6 +9,13 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export WORKON_HOME=~/Documents/python-apps/Projects
+export PROJECT_HOME=~/Documents/python-apps/Envs
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
+source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
@@ -25,20 +32,15 @@ plugins=(
   osx
 )
 
+alias python="python3"
+alias pip="pip3"
+
 source $ZSH/oh-my-zsh.sh
 
 
-# User configuration
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# NOTES
+# find rails PID (lsof -wni tcp:3000)
+# kill PID (kill -9 PID)
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -93,6 +95,11 @@ function gcom() {
 function dnsflush() {
   sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed
 }
+
+function flaskapp() {
+  FLASK_APP=index.py FLASK_DEBUG=1 flask run
+}
+
 
 
 

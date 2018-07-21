@@ -2,40 +2,40 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/matt/.oh-my-zsh
+export ZSH=/Users/matt127/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"                                                        
-                                                                                
+ZSH_THEME="robbyrussell"
+
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"                                                  
+COMPLETION_WAITING_DOTS="true"
 
 DISABLE_LS_COLORS="true"
-                                                                                
-# Would you like to use another custom folder than $ZSH/custom?                 
-# ZSH_CUSTOM=/path/to/new-custom-folder                                         
-                                                                                
-plugins=(                                                                       
-  colorize                                                                      
-  last-working-dir                                                              
-  osx                                                                           
-)                                                                               
-                                                                                
-source $ZSH/oh-my-zsh.sh                                                        
 
-                                                                                
-# User configuration                                                            
-                                                                                
-# Preferred editor for local and remote sessions                                
-# if [[ -n $SSH_CONNECTION ]]; then                                             
-#   export EDITOR='vim'                                                         
-# else                                                                          
-#   export EDITOR='mvim'                                                        
-# fi                                                                            
-                                                                                
-# Compilation flags                                                             
-# export ARCHFLAGS="-arch x86_64"                                               
-                                                                                
-# ssh                                                                           
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+plugins=(
+  colorize
+  last-working-dir
+  osx
+)
+
+source $ZSH/oh-my-zsh.sh
+
+
+# User configuration
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # list all files
@@ -60,6 +60,7 @@ function gaa() {
 }
 
 function rap() {
+  rm -r public/packs/*
   rails assets:precompile
 }
 

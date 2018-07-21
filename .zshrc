@@ -2,7 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/matt/.oh-my-zsh
+export ZSH=/Users/matt127/.oh-my-zsh
+
+ZSH_THEME="robbyrussell"
 
 # Path to the Android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -16,15 +18,10 @@ source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.s
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
-ZSH_THEME="robbyrussell"
-
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
 DISABLE_LS_COLORS="true"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
 plugins=(
   colorize
@@ -85,6 +82,7 @@ function gaa() {
 }
 
 function rap() {
+  rm -r public/packs/*
   rails assets:precompile
 }
 

@@ -23,6 +23,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'mileszs/ack.vim'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'pbrisbin/vim-mkdir'
+Plugin 'pangloss/vim-javascript'
    
 
 " All of your Plugins must be added before the following line
@@ -48,8 +49,10 @@ set ignorecase
 set splitbelow splitright
 set colorcolumn=80
 set clipboard=unnamed
+set backspace=2
 
 let mapleader = " "
+let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlp_map = '<c-p>'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
@@ -66,7 +69,10 @@ map <C-n> :NERDTreeToggle<CR>
 " ======================== 
 nnoremap <Leader>a :Ack<Space>
 nnoremap ; :
+nnoremap <Leader>d "_d
 
+" VISUAL MODE KEYMAPS
+vnoremap <Leader>d "_d
 
 " INSERT MODE KEYMAPS
 " ========================

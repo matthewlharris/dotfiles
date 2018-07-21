@@ -6,13 +6,15 @@ export ZSH=/Users/matt127/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
+# Path to the Android SDK
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
 DISABLE_LS_COLORS="true"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
 plugins=(
   colorize
@@ -21,19 +23,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-
-# User configuration
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -45,9 +34,27 @@ function lss() {
   ls -aFx
 }
 
-# cd into my rubyapps folder and list apps
+# cd into my hello-universe folder and list files
+function cdhu() {
+  cd ~/documents/hello-universe
+  lss
+}
+
+# cd into my python-apps folder and list apps
+function cdp() {
+  cd ~/documents/python-apps
+  lss
+}
+
+# cd into my ruby-apps folder and list apps
 function cdr() {
-  cd ~/documents/rubyapps
+  cd ~/documents/ruby-apps
+  lss
+}
+
+# cd into my javascript-apps folder and list apps
+function cdj() {
+  cd ~/documents/javascript-apps
   lss
 }
 
@@ -71,6 +78,7 @@ function gcom() {
 function dnsflush() {
   sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed
 }
+
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

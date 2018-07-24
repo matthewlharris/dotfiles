@@ -36,8 +36,9 @@ source $ZSH/oh-my-zsh.sh
 
 
 # NOTES
-# find rails PID (lsof -wni tcp:3000)
-# kill PID (kill -9 PID)
+# find rails PID: lsof -wni tcp:3000
+# kill PID: kill -9 PID
+# see website headers: curl -IL domainname.com
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"

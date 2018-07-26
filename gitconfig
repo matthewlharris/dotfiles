@@ -1,3 +1,5 @@
 [user]
 	email = matt@hellouniverse.co
 	name = matthewlharris
+[core]
+	editor = "atom --wait"

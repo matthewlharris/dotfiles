@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/matt127/.oh-my-zsh
+export ZSH=/Users/matt/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
@@ -84,6 +84,7 @@ function gaa() {
 function rap() {
   rm -r public/packs/*
   rails assets:precompile
+  yarn install
 }
 
 function gcom() {

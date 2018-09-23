@@ -1,24 +1,9 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH=/Users/matt/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-# Path to the Android SDK
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+$EDITOR="atom"
 
-export WORKON_HOME=~/Documents/python-apps/Projects
-export PROJECT_HOME=~/Documents/python-apps/Envs
-export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
-source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
-export PATH
-
-# Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
 DISABLE_LS_COLORS="true"
@@ -40,20 +25,11 @@ source $ZSH/oh-my-zsh.sh
 # kill PID: kill -9 PID
 # see website headers: curl -IL domainname.com
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # list all files
 # display file types
 # force column output, sorted across
 function lss() {
   ls -aFx
-}
-
-# cd into my hello-universe folder and list files
-function cdhu() {
-  cd ~/documents/hello-universe
-  lss
 }
 
 # cd into my python-apps folder and list apps
@@ -92,15 +68,9 @@ function gcom() {
   git commit
 }
 
-function dnsflush() {
+function flushdns() {
   sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed
 }
-
-function flaskapp() {
-  FLASK_APP=index.py FLASK_DEBUG=1 flask run
-}
-
-
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

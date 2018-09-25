@@ -14,9 +14,6 @@ plugins=(
   osx
 )
 
-alias python="python3"
-alias pip="pip3"
-
 source $ZSH/oh-my-zsh.sh
 
 
@@ -25,12 +22,12 @@ source $ZSH/oh-my-zsh.sh
 # kill PID: kill -9 PID
 # see website headers: curl -IL domainname.com
 
-# list all files
-# display file types
-# force column output, sorted across
-function lss() {
-  ls -aFx
-}
+alias lss="ls -aFx"
+alias g="git status"
+alias gaa="git add --all"
+alias gcom="git commit"
+alias spec="rspec -fd"
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed"
 
 # cd into my python-apps folder and list apps
 function cdp() {
@@ -50,28 +47,11 @@ function cdj() {
   lss
 }
 
-function g() {
-  git status
-}
-
-function gaa() {
-  git add --all
-}
-
 function rap() {
   rm -r public/packs/*
   rails assets:precompile
   yarn install
 }
-
-function gcom() {
-  git commit
-}
-
-function flushdns() {
-  sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache destroyed
-}
-
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

@@ -2,4 +2,4 @@
 	email = matt@hellouniverse.co
 	name = matthewlharris
 [core]
-	editor = "atom --wait"
+	editor = "code --wait"

@@ -10,14 +10,6 @@ ZSH_THEME="robbyrussell"
 
 COMPLETION_WAITING_DOTS="true"
 
-DISABLE_LS_COLORS="true"
-
-plugins=(
-  colorize
-  last-working-dir
-  osx
-)
-
 source $ZSH/oh-my-zsh.sh
 
 
@@ -32,7 +24,7 @@ alias cdr="cd ~/documents/ruby-apps; lss;"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say cache destroyed"
 alias g="git status"
 alias gaa="git add --all"
-alias gcom="git commit"
+alias gcom="git commit -m"
 alias lss="ls -aFx"
 alias rap="rm -r public/packs/*; rails assets:precompile; yarn install"
 alias spec="rspec -fd"
